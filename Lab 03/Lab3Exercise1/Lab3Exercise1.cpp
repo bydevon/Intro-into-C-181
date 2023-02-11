@@ -19,8 +19,7 @@ int main()
 	const double priceC = 10.00;
 
 	// Variables
-	double classASeats, classBSeats, classCSeats;
-	double total;
+	double classASeats, classBSeats, classCSeats, total;
 
 		cout << "How many class A seats sold: ";
 		cin >> classASeats;
@@ -36,10 +35,10 @@ int main()
 	double classCSeatsTotal = classCSeats * priceC;
 	total = classASeatsTotal + classBSeatsTotal + classCSeatsTotal;
 
-		cout << "Class A generated: " << setprecision(2) << fixed << classASeatsTotal << endl;
-		cout << "Class B generated: " << setprecision(2) << fixed << classBSeatsTotal << endl;
-		cout << "Class C generated: " << setprecision(2) << fixed << classCSeatsTotal << endl;
-		cout << "Total amount generated: " << setprecision(2) << fixed << total << endl;
+		cout << "Class A generated: " << setprecision(2) << fixed << classASeatsTotal << " dollars" << endl;
+		cout << "Class B generated: " << classBSeatsTotal << " dollars" << endl;
+		cout << "Class C generated: " << classCSeatsTotal << " dollars" << endl;
+		cout << "In total amount generated: " << total << " dollars" << endl;
 
 		return 0;
 }
