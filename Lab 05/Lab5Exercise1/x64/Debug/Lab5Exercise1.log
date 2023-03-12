@@ -1,0 +1,7 @@
+﻿  Lab5Exercise1.cpp
+E:\Labs\Lab 05\Lab5Exercise1\Lab5Exercise1.cpp(26,13): warning C4551: function call missing argument list
+E:\Labs\Lab 05\Lab5Exercise1\Lab5Exercise1.cpp(27,13): warning C4551: function call missing argument list
+E:\Labs\Lab 05\Lab5Exercise1\Lab5Exercise1.cpp(28,13): warning C4551: function call missing argument list
+E:\Labs\Lab 05\Lab5Exercise1\Lab5Exercise1.cpp(29,13): warning C4551: function call missing argument list
+E:\Labs\Lab 05\Lab5Exercise1\Lab5Exercise1.cpp(30,13): warning C4551: function call missing argument list
+E:\Labs\Lab 05\Lab5Exercise1\Lab5Exercise1.cpp(26,13): error C2568: 'identifier': unable to resolve function overload
