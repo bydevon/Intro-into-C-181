@@ -14,27 +14,31 @@ using namespace std;
 
 int main()
 {
+    const int minNum = 1;
     int num;
     int numAdd = 1;
+    int total = 0;
 
     cout << "Enter a positive number: ";
     cin >> num;
 
-    if (num < 0)
+    while (num < 0)
     {
-        cout << "Invalid Input ";
-
+        cout << "Invalid Input Try Again " << endl;
+        cout << "Enter a positive number: ";
+        cin >> num; // has to be greater than 0
     }
-    while (numAdd <= num)
+    
+/* code below was borrowed from https ://jesushilarioh.com/chapter-5-1-sum-of-numbers-tony-gaddis-starting-out-with-c-plus-plus/
+I didn't like some of the code but I used the i as he did as I was confusing myself otherwise
+*/
+
+    for (int i = 1; i <= num; i++)
     {
-        cout << numAdd << endl;
-
-        numAdd++;
+        cout << total << "+" << i << " = ";
+        total += i;
+        cout << total << endl;
     }
-
-
-
-
 
     return 0;
 }
