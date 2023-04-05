@@ -14,10 +14,10 @@ using namespace std;
 
 int main()
 {
-    const int minNum = 1;
     int num;
-    int numAdd = 1;
     int total = 0;
+    int min = 1;
+    
 
     cout << "Enter a positive number: ";
     cin >> num;
@@ -31,7 +31,7 @@ int main()
     
 /* code below was borrowed from https ://jesushilarioh.com/chapter-5-1-sum-of-numbers-tony-gaddis-starting-out-with-c-plus-plus/
 I didn't like some of the code but I used the i as he did as I was confusing myself otherwise
-*/
+
 
     for (int i = 1; i <= num; i++)
     {
@@ -39,6 +39,18 @@ I didn't like some of the code but I used the i as he did as I was confusing mys
         total += i;
         cout << total << endl;
     }
+    */ 
+    // decided to not use that code but still show where I got my understanding from even though I got confused by it
+
+    while (min <= num)
+    {
+        total += min;
+        cout << "i = " << min << "  total = " << total << endl;
+        min++;
+    }
+    
+    cout << endl << "Final total is: " << total << endl;
+
 
     return 0;
 }
