@@ -12,14 +12,35 @@ using namespace std;
 
 int main()
 {
-    int speed, distance, hours;
+    int speed, hours, distance = 0;
 
+    cout << "Enter the Speed you were going in miles per hour: ";
     cin >> speed;
+    cout << "Enter the Number of hours traveled: ";
     cin >> hours;
 
+    while (speed < 1 || hours < 1)
+    {
+        cout << "Invalid Input Number less than 1" << endl;
+        cout << "Enter the Speed you were going in miles per hour: " << endl;
+        cin >> speed;
+        cout << "Enter the Number of hours traveled: " << endl;
+        cin >> hours;
+    }
+
+    cout << "Hours       Distance Traveled" << endl;
+    cout << "-----------------------------" << endl;
+
+    // code below is from https://jesushilarioh.com/chapter-5-6-distance-traveled-tony-gaddis-starting-out-with-c-plus-plus/ with my own edits on it
+    for (int i = 0; i < hours; i++)
+    {
+        distance += speed; // distance = distance + speed
+        cout << i + 1 << "           " << distance << endl;
+    }
 
 
 
     return 0;
 }
+
 
